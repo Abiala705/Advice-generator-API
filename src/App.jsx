@@ -5,8 +5,8 @@ import patternDividerDesktop from "./assets/pattern-divider-desktop.svg";
 import dice from "./assets/icon-dice.svg";
 
 function App() {
-  const [quote, setQuote] = useState();
-  const [id, setId] = useState();
+  const [quote, setQuote] = useState(It is easy to sit up and take notice, what's difficult is getting up and taking actions);
+  const [id, setId] = useState(117);
 
   const adviceGenerator = async function () {
     const res = await fetch("https://api.adviceslip.com/advice");
